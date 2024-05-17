@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='sagemaker_experiment_analyzer',
+    name='SMExpAnalyzer',
     version='0.1.0',
     description='A package to analyze SageMaker experiments',
     author='Your Name',
-    author_email='your.email@example.com',
-    packages=find_packages(),
+    author_email='asadismaeel@gmail.com',
+    packages=find_packages(include=['SMExpAnalyzer', 'SMExpAnalyzer.*']),
     install_requires=[
         'boto3',
         'pandas',

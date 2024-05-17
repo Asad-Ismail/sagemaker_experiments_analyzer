@@ -20,7 +20,7 @@ pip install sagemaker_experiment_analyzer
 
 from sagemaker_experiment_analyzer import SageMakerExperimentAnalyzer
 
-experiment_name = "experiment_name"
+experiment_name = "exp_name"
 analyzer = SageMakerExperimentAnalyzer(experiment_name)
 comparison_df = analyzer.compare_runs('MetricName')
 analyzer.plot_comparison(comparison_df)
